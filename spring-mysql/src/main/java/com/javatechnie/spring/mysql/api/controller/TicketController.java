@@ -44,7 +44,7 @@ public class TicketController {
 	{
 		return dao.findById(id);
 	}
-	@PutMapping("/updateTickets")
+	/*@PutMapping("/updateTickets")
 	public Ticket updateTicket(@RequestBody Ticket newTickets)
 	{
 		return dao.save(newTickets);	
@@ -68,7 +68,7 @@ public class TicketController {
 	  @PathVariable int id,
 	  @RequestParam("name") String name) {
 	    return new ResponseEntity<>(new Ticket(id), HttpStatus.OK);
-	}
+	}*/
 	
 		@DeleteMapping("/deleteTicketDetails/{id}")
 		public ResponseEntity<?> deleteBazz(@PathVariable Integer id){
